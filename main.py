@@ -1,4 +1,3 @@
-```python
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -456,4 +455,3 @@ st.caption(
     "전체 회귀분석의 독립 변수는 1908년부터 지난 연수이며, "
     "최근 20년 분석은 2006~2025년 데이터를 사용했습니다."
 )
-```
