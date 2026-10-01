@@ -361,36 +361,14 @@ predicted_temp = (
 # 예측 결과
 # =========================================================
 
-st.markdown(
-    f"""
-    <div style="
-        text-align:center;
-        padding:30px;
-        border-radius:15px;
-        background-color:#f0f2f6;
-        margin-top:10px;
-        margin-bottom:20px;
-    ">
-        <div style="
-            font-size:24px;
-            font-weight:bold;
-        ">
-            {selected_year}년 예상 연평균기온
-        </div>
+st.markdown("---")
 
-        <div style="
-            font-size:52px;
-            font-weight:bold;
-            margin-top:10px;
-        ">
-            {predicted_temp:.2f}℃
-        </div>
-    </div>
-    """,
-    unsafe_allow_html=True
+st.subheader(f"🔮 {selected_year}년 예상 기온")
+
+st.metric(
+    label="예상 연평균기온",
+    value=f"{predicted_temp:.2f}℃"
 )
-
-
 # =========================================================
 # 선택한 연도의 회귀선 위치
 # =========================================================
